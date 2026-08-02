@@ -1,0 +1,37 @@
+generated: '2026-07-21'
+method: searched
+note: >-
+  Probe of the /.well-known/ discovery surface on Ubitricity's public hosts.
+  No genuine well-known documents were found. ubitricity.com returns 404 for
+  every probed path. account.ubitricity.com (the Admin Portal SPA) returns
+  HTTP 200 with the Angular index.html shell (text/html) for every path,
+  including security.txt and OIDC discovery — recorded as spa-fallback, not
+  saved as documents.
+hosts:
+- host: https://ubitricity.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /security.txt
+    status: 404
+  - path: /llms.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://account.ubitricity.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    note: spa-fallback (text/html index shell, not a security.txt)
+  - path: /.well-known/openid-configuration
+    status: 200
+    note: spa-fallback (text/html index shell, not an OIDC document)
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    note: spa-fallback (text/html index shell, not an RFC 8414 document)

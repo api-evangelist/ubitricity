@@ -1,0 +1,40 @@
+generated: '2026-07-21'
+method: searched
+source: https://ubitricity.com/en/conformity/
+standards:
+- id: ce-declaration-of-conformity
+  conforms: true
+  evidence: >-
+    Published CE Declarations of Conformity for charge point products on
+    https://ubitricity.com/en/conformity/ — Simple Socket Plus Chelsea
+    (sso 1018-ts-4.0.0 / 4.0.1, DE), Lamppost Charge Point Heinz (v1.2 A/B, DE),
+    Simple Socket Plus Etoile (sso 1019-ts-3.1.0, FR).
+- id: ukca-declaration-of-conformity
+  conforms: true
+  evidence: >-
+    Published UKCA Declarations of Conformity on
+    https://ubitricity.com/en/conformity/ — Lite OPDD (v1.0), Simple Socket
+    Plus Chelsea, Wrap Around Housing (UK).
+- id: ocpp
+  conforms: true
+  evidence: >-
+    Ubitricity's GitHub organization (https://github.com/ubitricity) maintains
+    active forks of Java-OCA-OCPP (Open Charge-Point Protocol client/server
+    library, pushed 2025-12) and ocpp-jaxb (Java mappings for OCPP), indicating
+    an OCPP-based charge point management platform. No public OCPP/OCPI
+    endpoint is documented.
+- id: open-source-license-compliance
+  conforms: true
+  evidence: >-
+    https://ubitricity.com/en/open-source-software/ publishes open-source
+    license notices for embedded charge point software (GPL-2.0, LGPL-2.1,
+    eCos-2.0, CDDL-1.1) with a Chelsea-user-NOTICE download.
+- id: ocpi
+  conforms: false
+  evidence: no published OCPI endpoint or roaming developer documentation found
+- id: oauth2
+  conforms: false
+  evidence: >-
+    account.ubitricity.com serves an SPA shell for /.well-known/openid-configuration
+    and /.well-known/oauth-authorization-server (no genuine discovery documents);
+    no public OAuth documentation.

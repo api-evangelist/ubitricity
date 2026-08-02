@@ -1,9 +1,27 @@
 aid: ubitricity
 name: Ubitricity
-description: 'Ubitricity is a company surfaced as a portfolio company of earlybird and added to the API
-  Evangelist network as a stub for enrichment. Sector: energy. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Ubitricity is a Berlin-based electric vehicle charging company and wholly-owned
+  subsidiary of Shell, best known for integrating EV charge points into existing
+  street infrastructure such as lampposts and bollards. It operates the UK's
+  largest public on-street charging network, with further networks in Germany and
+  France, providing charge point hardware (Simple Socket lamppost units, AC and DC
+  chargers), a managed charging platform built on the Open Charge Point Protocol
+  (OCPP), and Pay-As-You-Go driver charging. The company does not currently
+  publish a public developer API or developer portal.
 url: https://raw.githubusercontent.com/api-evangelist/ubitricity/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://ubitricity.com/wp-content/uploads/cropped-ubitricity-favicon-720-192x192.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,13 +30,50 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Energy
+- EV Charging
+- Electric Vehicles
+- Charging Infrastructure
+- Lamppost Charging
+- Smart Charging
+- Mobility
+- OCPP
 apis: []
+common:
+- type: Website
+  url: https://ubitricity.com/en
+- type: Blog
+  url: https://ubitricity.com/en/blog/
+- type: Support
+  url: https://ubitricity.com/en/contact-us/
+- type: TermsOfService
+  url: https://ubitricity.com/en/gtc/
+- type: PrivacyPolicy
+  url: https://ubitricity.com/en/privacy-policy/
+- type: GitHubOrganization
+  url: https://github.com/ubitricity
+- type: Login
+  url: https://account.ubitricity.com/
+- type: Compliance
+  url: https://ubitricity.com/en/conformity/
+- type: Conformance
+  url: conformance/ubitricity-conformance.yml
+- type: WellKnown
+  url: well-known/ubitricity-well-known.yml
+- type: LLMsTxt
+  url: llms/ubitricity-llms.txt
+- type: DomainSecurity
+  url: security/ubitricity-domain-security.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v1
